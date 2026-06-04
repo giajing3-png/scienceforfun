@@ -122,6 +122,25 @@ html {
   scroll-behavior: smooth;
 }
 
+  .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
 
 </style>
 </head>
@@ -146,7 +165,31 @@ html {
 <div class="container">
   <h1>Environmental Science</h1>
   <p>Check the themes to see what you've collected so far!</p>
-  <h2>Theme 1: Forces (released on ...)</h2>
+
+  <h2 id="theme1">Theme 1: Forces (released on ...)</h2>
+
+  <div class="gallery">
+    <img src="images/Cottontail Rabbit.png" alt="Cottontail Rabbit">
+    <img src="images/IMAGENAME2.jpg" alt="">
+    <img src="images/IMAGENAME3.jpg" alt="">
+    <img src="images/IMAGENAME4.jpg" alt="">
+    <img src="images/IMAGENAME5.jpg" alt="">
+    <img src="images/IMAGENAME6.jpg" alt="">
+    <img src="images/IMAGENAME7.jpg" alt="">
+    <img src="images/IMAGENAME8.jpg" alt="">
+    <img src="images/IMAGENAME9.jpg" alt="">
+    <img src="images/IMAGENAME10.jpg" alt="">
+    <img src="images/IMAGENAME11.jpg" alt="">
+    <img src="images/IMAGENAME12.jpg" alt="">
+    <img src="images/IMAGENAME13.jpg" alt="">
+    <img src="images/IMAGENAME14.jpg" alt="">
+    <img src="images/IMAGENAME15.jpg" alt="">
+    <img src="images/IMAGENAME16.jpg" alt="">
+    <img src="images/IMAGENAME17.jpg" alt="">
+    <img src="images/IMAGENAME18.jpg" alt="">
+    <img src="images/IMAGENAME19.jpg" alt="">
+    <img src="images/IMAGENAME20.jpg" alt="">
+  </div>
 </div>
 
 <div class="toc">
