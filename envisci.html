@@ -124,7 +124,8 @@ html {
 
   .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, 180px);
+  justify-content: center;
   gap: 20px;
   margin-top: 30px;
 }
@@ -141,6 +142,12 @@ html {
   transform: scale(1.05);
 }
 
+.category-title {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+  
 </style>
 </head>
 
@@ -166,8 +173,8 @@ html {
   <p>Check the themes to see what you've collected so far!</p>
 
   <h2 id="theme1">Theme 1: Forest Floor</h2>
-  <p> Decomposer </p>
-  
+
+  <h3 class="category-title">Decomposer</h3>
   <div class="gallery">
     <img src="images/EnviSci/ForestFloor/Cottontail-Rabbit.png" alt="Cottontail Rabbit">
     <img src="images/EnviSci/ForestFloor/Turkey-Tail-Mushroom.png" alt="Turkey Tail Mushroom">
